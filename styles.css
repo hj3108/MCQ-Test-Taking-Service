@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Oswald:wght@200;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #341f97;
+}
+
+.welcome_text{
+    width: 400px;
+}
+
+.welcome_form input,
+.welcome_form button {
+    display: block;
+    width: 100%;
+}
+
+.welcome_form input{
+    margin-bottom: 15px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.welcome_form button{
+    font-size: 30px;
+    padding: 20px 0;
+    border: none;
+    border-radius: 100px;
+    color: rgb(0, 255, 174);
+    background-color: white;
+    transition: 0.4s all;
+}
+
+.welcome_form button:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.welcome_form input:focus,
+.welcome_form button:focus{
+    outline: none;    /* no outline of buttons and input will occur*/
+}
+
+.quiz{
+    border-radius: 3px;
+    display: grid;
+    grid-template-rows: 60px auto; /* first row will take 60 px and rest will be taken by other row.*/
+    width: 800px;
+    height: 500px;
+    background-color: white;
+}
+
+.quiz_header{
+    display: flex;
+    justify-content: space-between;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color:gainsboro;
+    box-shadow: 3px 2px 5px 1px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.quiz_body{
+    background-color: rgb(108, 115, 216);
+    padding: 30px;
+}
+
+.quiz_user{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.quiz_timer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 30px;
+    background-color: #341f97;
+    box-shadow: none;
+    color: white;
+}
+
+.option_group{
+    list-style-type: none;   /*to remove bullets*/
+    margin: 30px 0;
+}
+
+.option{
+    background-color: aliceblue;
+    width: 300px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    border: 2px solid transparent;
+}
+
+.option:hover {
+    cursor: pointer;
+    border: 2px solid magenta;
+    color: rgb(52, 81, 198);
+}
+
+.option.active {
+    background-color: magenta;
+    color: #fff;
+}
+
+.btn-next{
+    background-color:rgb(65, 170, 205);
+    color: white;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 27px;
+    transition: 5.9s all;
+}
+
+.btn-next:hover{
+    cursor: pointer;
+    background-color: white;
+    color: darkmagenta;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+.award_icon{
+    font-size: 400px;
+    color: #fff;
+}
+
+
+.username,
+.userpoints,
+.usertime,.percentage {
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
+}
+
+
+.main{
+    justify-content: center;
+    text-align: center;
+    font-size: 70px;
+    padding-bottom: 200px;
+    color: cyan;
+}
